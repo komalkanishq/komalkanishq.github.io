@@ -1,6 +1,6 @@
 # Komal & Kanishq: wedding invitation
 
-Live at **https://koka01032027-web.github.io/invitation/** (GitHub Pages, served from `main` / root).
+Live at **https://komalkanishq.github.io/** (GitHub Pages, served from `main` / root).
 
 Plain HTML + CSS + vanilla JS. There is no build step and nothing to install for the site.
 
@@ -86,7 +86,7 @@ Commit and push. Pages updates in about a minute.
 
 ## Sending it
 
-- **WhatsApp / SMS / Telegram:** send the **URL as text**: `https://koka01032027-web.github.io/invitation/`.
+- **WhatsApp / SMS / Telegram:** send the **URL as text**: `https://komalkanishq.github.io/`.
   WhatsApp turns it into a large preview card (`preview.jpg`), and tapping the card opens the invitation.
   Images and stickers sent on WhatsApp **cannot** carry links. Only the link preview is tappable.
 - **Plain image:** send `invite-card.jpg`. Guests scan the QR code to open the site.
@@ -100,7 +100,7 @@ WhatsApp caches the preview the first time a URL is shared. After you change `pr
 send the URL with a version suffix so WhatsApp fetches a fresh one:
 
 ```
-https://koka01032027-web.github.io/invitation/?v=2
+https://komalkanishq.github.io/?v=2
 ```
 
 Use `?v=3`, `?v=4` and so on for later changes. Facebook's [Sharing Debugger](https://developers.facebook.com/tools/debug/) shows what the preview will look like.

@@ -42,7 +42,7 @@ def fill(template, **extra):
 
 
 def qr_data_uri():
-    img = qrcode.make(SITE, border=1, box_size=10,
+    img = qrcode.make(SITE, border=3, box_size=10,
                       error_correction=qrcode.constants.ERROR_CORRECT_M)
     buf = io.BytesIO()
     img.save(buf, format="PNG")
@@ -74,7 +74,7 @@ def foot_html():
     """Bottom pill: QR + site link once the site is live (show_qr), otherwise just the contact."""
     if D.get("show_qr"):
         return (f'<div class="foot"><div class="qr"><img src="{qr_data_uri()}" alt=""></div><div>'
-                f'<div class="t1">Scan for venue, maps &amp; RSVP</div><div class="t2">{e(SITE)}</div>'
+                f'<div class="t1">Scan to open the invitation</div>'
                 f'<div class="t3">Contact: {e(D["contact"])}</div></div></div>')
     return (f'<div class="foot solo"><div><div class="t1">For any queries</div>'
             f'<div class="t3">{e(D["contact"])}</div></div></div>')
