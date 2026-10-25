@@ -66,7 +66,10 @@ def events_html():
 
 def venue_html():
     if filled(D.get("venue", "")):
-        return f'<div class="venue">{e(D["venue"])}</div>'
+        lines = D.get("address") or []
+        lines = [lines] if isinstance(lines, str) else lines  # one string, or a list of lines
+        addr = f'<div class="addr">{"<br>".join(e(l) for l in lines)}</div>' if lines and all(map(filled, lines)) else ""
+        return f'<div class="venue">{e(D["venue"])}</div>{addr}'
     return f'<div class="venue follow">{e(D["to_follow"])}</div>'
 
 

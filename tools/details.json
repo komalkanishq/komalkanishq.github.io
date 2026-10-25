@@ -4,10 +4,14 @@
   "bride": "Komal",
   "groom": "Kanishq",
   "bride_parents": "Daughter of Smt. Manju Saini & Sri. Rajesh Saini",
-  "groom_parents": "Son of Sarika Saini & Sri. Ajesh Saini",
+  "groom_parents": "Son of Smt. Sarika Saini & Sri. Ajesh Saini",
   "main_date": "15 November 2026",
   "main_when": "Sunday · 15 November 2026 · 6:00 PM",
-  "venue": "Elite Hall, Miraya Blu · Sikri, Faridabad",
+  "venue": "Elite Hall (First Floor), Miraya Blu",
   "events": [],
-  "contact": "Sri. Rajesh Saini · 98112 83442"
+  "contact": "Sri. Rajesh Saini · 98112 83442",
+  "address": [
+    "Main Mathura Road, near CNG Pump, opposite DPSG School,",
+    "42 Milestone, Sikri, Faridabad, Haryana 121004"
+  ]
 }
