@@ -1,4 +1,4 @@
-# Komal & Kanishq: wedding invitation
+# Komal & Kanishk: wedding invitation
 
 Live at **https://komalkanishq.github.io/** (GitHub Pages, served from `main` / root).
 

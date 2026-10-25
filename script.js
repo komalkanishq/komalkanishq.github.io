@@ -51,7 +51,7 @@
   if (start) {
     var stamp = function (d) { return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, ''); };
     save.href = 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
-      '&text=' + encodeURIComponent('Komal & Kanishq’s Engagement') +
+      '&text=' + encodeURIComponent('Komal & Kanishk’s Engagement') +
       '&dates=' + stamp(start) + '/' + stamp(end) +
       (filled(cfg.mapQuery) ? '&location=' + encodeURIComponent(cfg.mapQuery) : '') +
       '&details=' + encodeURIComponent(location.href.split(/[?#]/)[0]);
