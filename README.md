@@ -40,25 +40,6 @@ Every unknown is written as `[PLACEHOLDER]`. Search `index.html` for `[` to find
    The current slides (fountain video, rose arches, fountains) are stock photos; replace or remove any of them.
 7. **Music (optional):** add an mp3 at `audio/music.mp3`. A music button then appears in the top-right corner. It never autoplays; guests tap to play.
 
-### RSVP (free Google Form, no backend)
-
-The on-page form posts straight into a Google Form.
-
-1. Create a Google Form with four questions:
-   - **Name:** short answer
-   - **Email:** short answer
-   - **Will you be attending?:** multiple choice, with the options **exactly** `Joyfully accept` and `Regretfully decline`
-   - **Message:** paragraph
-2. In the form's ⋮ menu, choose **Get pre-filled link**. Type something in each field, click **Get link**, and paste the link somewhere.
-   It contains `entry.123456789=...` for each question.
-3. In `index.html`:
-   - Set the form's `action` to your form URL with `viewform` replaced by `formResponse`,
-     e.g. `https://docs.google.com/forms/d/e/XXXX/formResponse`.
-   - Replace each `[entry.ID for ...]` with the matching `entry.123456789`.
-4. Responses appear in the Google Form (and in its linked Sheet if you create one).
-
-If you don't want RSVP, delete the `<section id="rsvp">` block.
-
 ### The images (`preview.jpg`, `invite-card.jpg`, `sticker.webp`, `email-snippet.html`)
 
 Edit `tools/details.json`, then run:
