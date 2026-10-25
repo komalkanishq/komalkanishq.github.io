@@ -25,12 +25,12 @@ Every unknown is written as `[PLACEHOLDER]`. Search `index.html` for `[` to find
 ### In `index.html`
 
 1. **The config block in `<head>`** (`<script id="wedding-config">`) drives three features:
-   - `start` is set to `2027-03-01T19:00:00+05:30` (Monday 1 March 2027, 7:00 PM IST).
+   - `start` is set to `2026-11-15T18:00:00+05:30` (Sunday 15 November 2026, 6:00 PM IST, the engagement).
      It feeds the **countdown** and the **Save the Date** button, which opens Google Calendar.
    - `end` is optional. Without it, the calendar entry runs for 3 hours.
    - `mapQuery`: the venue name and address as you'd type them into Google Maps. It feeds the **embedded map**.
      Until it's filled in, the map area shows a note.
-2. **Scratch card:** 1 March 2027 / Monday / 7:00 PM. If the date changes, update the scratch card and `start` together.
+2. **Scratch card:** 15 November 2026 / Sunday / 6:00 PM. If the date changes, update the scratch card and `start` together.
 3. **Timeline, venue, pre-wedding events:** replace each placeholder.
    - To add an event, copy an `<li>` (timeline) or an `<article class="pre">` (pre-wedding event).
    - Each event's **Open in Maps** button takes a Google Maps share link (in Maps: Share → Copy link).
